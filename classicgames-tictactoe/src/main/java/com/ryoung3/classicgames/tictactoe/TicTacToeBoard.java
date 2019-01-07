@@ -2,8 +2,10 @@ package com.ryoung3.classicgames.tictactoe;
 
 public class TicTacToeBoard{
 
-    private char[][] charBoard = new char[3][3];
-    
+   // private char[][] charBoard = new char[3][3];
+    public TicTacToeBoard(){
+        // empty constructor
+    }
     public void drawBoard(){
         /*
              
@@ -14,10 +16,12 @@ public class TicTacToeBoard{
                  |     |
              
         */
-        for(int row = 0; row < 3; row++){
-            for
-        }
-    
+        System.out.println("    |     |     ");
+        System.out.println("- - - - - - - -");
+        System.out.println("    |     |     ");
+        System.out.println("- - - - - - - -");
+        System.out.println("    |     |     ");
+      
     }
     
 }
