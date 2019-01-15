@@ -1,3 +1,5 @@
+package com.ryoung3.classicgames.tictactoe;
+
 public class Player{
 
     public String firstName;
