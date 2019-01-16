@@ -22,19 +22,25 @@ public class TicTacToeBoard{
       
     }
 
-    public void checkSlot(int row, int column){
+    public void checkSlot(int row, int column, char letter){
         char slot = charBoard[row][column];
         if(Character.isWhitespace(slot) == true){
             System.out.println("This slot is already filled. Please choose another slot. ");
         }
         else{
-
+            fillInSlot(row, column, letter);
         }
     }
 
     public void fillInSlot(int row, int column, char letter){
         charBoard[row][column] = letter;
         drawBoard();
+    }
+
+    public Boolean checkForWinner(){
+
+        // check for vertical 
+        return false;
     }
     
 }
