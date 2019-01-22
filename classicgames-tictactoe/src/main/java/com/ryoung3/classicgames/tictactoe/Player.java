@@ -17,4 +17,8 @@ public class Player{
     public char getLetter(){
         return this.letter;
     }
+
+    public boolean isletterAvailable(){
+        return true;
+    }
 }
