@@ -39,7 +39,7 @@ public class TicTacToeBoard{
 
     public Boolean checkForWinner(){
 
-        // check for vertical 
+        // check for vertical win
         return false;
     }
     
