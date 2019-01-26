@@ -37,10 +37,26 @@ public class TicTacToeBoard{
         drawBoard();
     }
 
-    public Boolean checkForWinner(){
-
+    public Boolean checkForWinner(char letter){
+       // check for horizontal win
+        for(int row = 0; row < 3; row++){
+            if(charBoard[row][0] == letter && charBoard[row][1] == letter && charBoard[row][2] == letter) return true;
+        }
+        
         // check for vertical win
-        return false;
+        for(int column = 0; column < 3; column++){
+            if(charBoard[0][column] == letter && charBoard[1][column] == letter && charBoard[2][column] == letter) return true;
+        }
+       
+
+        // check for diagonal win
+        if(charBoard[0][0] == letter && charBoard[1][1] == letter && charBoard[2][2] == letter) return true;
+        if(charBoard[0][2] == letter && charBoard[1][1] == letter && charBoard[2][0] == letter) return true;
+         
+        
+         return false;
     }
+
+    
     
 }
