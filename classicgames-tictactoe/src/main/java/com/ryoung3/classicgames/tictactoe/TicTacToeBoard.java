@@ -57,6 +57,16 @@ public class TicTacToeBoard{
          return false;
     }
 
+    public Boolean checkForTie(){
+        
+        for(int row = 0; row < charBoard.length; row++){
+            for(int column = 0; column < charBoard[row].length; column++){
+                if(Character.isWhitespace(charBoard[row][column])) return false;
+            }
+        }
+        
+        return true;
+    }
     
     
 }
