@@ -16,7 +16,7 @@ public class TicTacToe{
     public void beginTicTacToe(){
         // Starting point of the game
         Scanner userInput = new Scanner(System.in);
-
+        char letter;
        
 
         System.out.println("Welcome ! \n Let's play Tic-Tac-Toe!");
@@ -32,12 +32,20 @@ public class TicTacToe{
             String player1;
             String player2;
 
+            
+
             System.out.println("Please enter player 1 name: ");
             player1 = userInput.nextLine();
+            System.out.println("Please choose a letter: X,O or whatever you want " + player1);
+            letter = userInput.nextLine().charAt(0);
+            Player _1stPlayer = new Player(player1,letter);
 
             System.out.println("Please enter player 2 name: ");
             player2 = userInput.nextLine();
-
+            System.out.println("Please choose a letter: X,O or whatever you want " + player2);
+            letter = userInput.nextLine().charAt(0);
+            Player _2ndPlayer = new Player(player2,letter);
+            
             
         }
         else{
@@ -45,6 +53,9 @@ public class TicTacToe{
 
             System.out.println("Please enter player 1 name: ");
             player1 = userInput.nextLine();
+            System.out.println("Please choose a letter: X,O or whatever you want " + player1);
+            letter = userInput.nextLine().charAt(0);
+            Player _1stPlayer = new Player(player1,letter);
         }
         
         userInput.close();
